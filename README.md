@@ -8,10 +8,12 @@ https://github.com/DanielePettenuzzo/MAVSDK/tree/daniele-develop-branch
 - send_autopilot_version: saves the autopilot_version from the autopilot and then this can be sent again. This was used to test a QGC bug fix where if we received many AUTOPILOT_VERSION messages we would run out of sockets and after some minutes the application would crash.
 
 ## Build
-```mkdir build
+```
+mkdir build
 cd build
 cmake ..
-make```
+make
+```
 
 ## Run
 ./build/send_autopilot_version <mavlink connection>
